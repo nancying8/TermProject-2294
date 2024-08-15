@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--tailwind link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--external css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+</head>
+    <body class="min-h-full overflow-x-hidden relative">
+        <!--header-->
+    <header class=header-intro>
+        <div class="header-container">
+            <!--the logo is here and give them a width of 200-->
+            <a href="index.html"><img src="images/logo.svg" width="200" alt="logo" class="logo"></a>
+            <h5>Horsez</h5>
+            <nav class="absolute top-0 right-0 w-72 bg-gray-200 h-screen translate-x-full transition-all lg:relative lg:h-auto lg:w-auto lg:translate-x-0 js-menu z-20">
+                <!--here is the icon for close the nav menu when is below of screen size-->
+                <a href="#" class="js-menu-close absolute p-2 top-0 right-0 lg:hidden">
+                    <img src="images/icon-close.svg" alt="close menu"  class="w-6 h-6 ">
+                </a>
+                <ul class="text-black lg:text-black-500  lg:flex">
+                    <br>
+                    <br>
+                    <!--nav bar where the actual page will have a class"indicate" to be highlight-->
+                    <li class="text-center py-2 px-4 border-b lg:border-0"> <a href="index.html">Home</a> </li>
+                    <li class=" text-center py-2 px-4 border-b lg:border-0"> <a href="gallery.html">Gallery</a> </li>
+                    <li class="text-center py-2 px-4 border-b lg:border-0"> <a href="about.html">About</a> </li>
+                    <li class="indicate nav-header text-center py-2 px-4 border-b lg:border-0"> <a href="location.html">Location</a> </li>
+                </ul>
+            </nav><!--here is the icon for open the nav menu when is below of screen size-->
+            <a href="#" class="js-menu-open lg:hidden">
+                <img src="images/icon-menu.svg" alt="open menu" class="w-6 h-6">
+            </a>
+        </div>
+    </header>
+
+        <!--banner-->
+    <main>
+
+        <section class="relative">
+            <img src="images/banner-3.jpeg" alt="banner" class="w-full  max-h-[45rem]">
+        </section>
+
+        <section class="flex-grow container px-4 mx-auto bg-black-500">
+            <h2 class="text-center font-bold text-2xl md:text-3xl lg:text-5xl  my-10 text-gray">Location</h2>
+            <p class="my-2 font-bold text-xl text-center p-2 text-gray">Come visit us to see our beautiful horses in person! Explore the stables, meet our friendly staff, and enjoy a day with these magnificent creatures. We can't wait to welcome you!</p>
+        </section>
+
+        <!--map section-->
+
+        <section class="map-intro">
+            <div id="map"></div>
+        </section>
+    <hr>
+    </main>
+
+    <!--footer-->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="flex wrap">
+                <div class="site-footer__logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg">
+                    </a>
+                </div>
+                <nav class="site-footer__access">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                         <li><a href="gallery.html">Gallery</a></li>
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="location.html">Location</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JavaScript: Adding interactive map functionality -->
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <!--addtional map js-->
+    <script>
+        // Setting the view point of the map as Vancouver when the page loads
+        var map = L.map('map').setView([49.358714, -122.838322], 13);
+        
+        // Adds a tile layer from OpenStreetMap to the Leaflet map
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        
+        // Creates a marker at the coordinate and binds a popup with the text "Here"
+        L.marker([49.358714, -122.838322]).addTo(map)
+        .bindPopup('We Are Here')
+        .openPopup();
+    </script>
+
+     <!--additional js-->
+     <script>
+        // This script makes the page interactive:
+        // 1. It handles the mobile and tablet menu, allowing it to slide in and out when the user clicks the menu icons.
+        // 4. It adds cool animations that trigger as you scroll down the page.
+    
+        document.addEventListener('DOMContentLoaded', (event) => {
+        // Controls for opening and closing the mobile and tablet menu
+        const menuOpen = document.querySelector('.js-menu-open');
+        const menuClose = document.querySelector('.js-menu-close');
+        const menu = document.querySelector('.js-menu');
+        // Show the menu when the open button is clicked
+        menuOpen.addEventListener('click', () => {
+            menu.classList.remove('translate-x-full');
+        });
+        // Hide the menu when the close button is clicked
+        menuClose.addEventListener('click', () => {
+            menu.classList.add('translate-x-full');
+        });
+   
+       });
+    </script>
+
+     
+</body>
+</html>
