@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horsez</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--tailwind link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--external css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script for videos-->
+    <link rel="stylesheet" href="css/bg-video/jquery.background-video.css">
+
+    <!---->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<!-- the body has a tailwind css-value on it-->
+<!-- mean mimumun-heigh will be will, hidden x-overflow and position is relative-->
+<body class="min-h-full overflow-x-hidden relative">
+
+    <!--header-->
+    <header class=header-intro>
+        <div class="header-container">
+            <!--the logo is here and give them a width of 200-->
+            <a href="index.html"><img src="img/logo.svg" width="200" alt="logo" class="logo"></a>
+            <h5 class="font-bold text-[3rem] transform -translate-x-[70%]">Horsez</h5>
+            <nav class="absolute top-0 right-0 w-72 bg-gray-200 h-screen translate-x-full transition-all lg:relative lg:h-auto lg:w-auto lg:translate-x-0 js-menu z-20">
+                <!--here is the icon for close the nav menu when is below of screen size-->
+                <a href="#" class="js-menu-close absolute p-2 top-0 right-0 lg:hidden">
+                    <img src="img/icon-close.svg" alt="close menu"  class="w-6 h-6 ">
+                </a>
+                <ul class="text-black lg:text-black-500  lg:flex">
+                    <br>
+                    <br>
+                    <!--nav bar where the actual page will have a class"indicate" to be highlight-->
+                    <li class="indicate text-center py-2 px-4 border-b lg:border-0"> <a href="index.html">Home</a> </li>
+                    <li class="nav-header text-center py-2 px-4 border-b lg:border-0"> <a href="gallery.html">Gallery</a> </li>
+                    <li class="nav-header text-center py-2 px-4 border-b lg:border-0"> <a href="about.html">About</a> </li>
+                    <li class="nav-header text-center py-2 px-4 border-b lg:border-0"> <a href="location.html">Location</a> </li>
+                </ul>
+            </nav><!--here is the icon for open the nav menu when is below of screen size-->
+            <a href="#" class="js-menu-open lg:hidden">
+                <img src="img/icon-menu.svg" alt="open menu" class="w-6 h-6">
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+    <!--banner-->
+
+    <section class="banner" id="intro">
+        <div class="jquery-background-video-wrapper">
+            <!-- Add jQuery Background Video HTML Elements-->
+            <div class="jquery-background-video-wrapper">
+                <video src="videos/horses-video.mp4" class="banner-video my-background-video 
+                jquery-background-video" loop autoplay muted playsinline poster="img/banner-video.jpg"></video>
+         </div>
+        </div>
+    </section>
+
+    <!--content-->
+
+    <section class="flex-grow container px-4 mx-auto">
+        <h2 class="text-center font-bold text-2xl md:text-7xl lg:text-10xl  my-10">Welcome to all about horse</h2>
+        <p class="my-2 font-bold text-xl text-center p-5">Discover the majestic world of horses with us! From their rich history and diverse breeds to their roles in our lives today, we celebrate everything that makes horses extraordinary.</p>
+    </section>
+    <!-- Image gallery section with a masonry layout -->
+    <section class="flex-grow container mx-auto">
+        <div class="msnry-grid">
+            <div class="msnry-grid-sizer"></div>
+            <div class="msnry-gutter-sizer"></div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-1.jpg" alt="horse-1" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-2.jpg" alt="horse-2" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-3.jpg" alt="horse-3" class="container-img">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!--content paragraph with specific value fot size and padding-->
+        <p class="my-2 font-bold text-xl text-center p-2">The horse's powerful muscles ripple beneath its sleek, glossy coat as it gallops across the open field. Its mane flows wildly in the wind, and its hooves pound the ground with a rhythmic beat. The grace and strength of this magnificent creature are evident in every stride, reflecting its noble spirit and untamed freedom..</p>
+
+    </section>
+
+    <!--Aos card display -->
+
+    <!--  Card 1  -->
+    <section class="card">
+    <img src="img/horse-12.jpg" alt="wild">
+    <div>
+        <h4>Wild Horses</h4>
+        <p>
+        Explore the life of wild horses, particularly Mustangs in North America, and the ongoing efforts to protect and manage these iconic animals in their natural habitats.</p>
+        </div>
+    </section>
+
+    <!--  Card 2  -->
+    <section class="card" data-aos="fade-left">
+      <img src="img/horse-11.jpg" alt="sleep">
+     <div>
+        <h4>Unique Sleep Patterns</h4>
+        <p>
+         Horses can sleep both standing up and lying down. They have a unique locking mechanism in their legs that allows them to stand without falling over, enabling them to catch quick naps while standing. However, they do need to lie down to achieve deep REM sleep..</p>
+        </div>
+    </section>
+        
+    <!-- Card 3 -->
+    <section class="card" data-aos="fade-right">
+        <img src="img/horse-10.jpg" alt="memory">
+            <div>
+            <h4>Incredible Memory</h4>
+            <p >
+            Horses have excellent memories, especially when it comes to remembering people and places. They can recognize human faces and remember specific locations, such as the way back to a barn or water source, even after a long time.</p>
+            </div>
+    </section>
+    <hr>
+  </main>
+
+  <!--footer-->
+
+  <footer class="site-footer">
+    <div class="container">
+        <div class="flex wrap">
+            <div class="site-footer__logo">
+                <a href="index.html">
+                    <img src="img/logo.svg">
+                </a>
+                <h5 class="font-bold text-[3rem] transform -translate-y-[110%]">Horsez</h5>
+            </div>
+            <nav class="site-footer__access">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+<!--
+
+    Student name: Nancy Wu
+    Student No: A01324062
+    Assignment: Term Project
+    link github: https://github.com/nancying8/Term-Project-2294
+    -->
+
+    
+    <!-- Add jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+     <!--masonry libraru for grid and image loading-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazyload/17.4.0/lazyload.min.js"></script>
+
+     <!-- banner video-->
+     <script src="js/bg-video/jquery.background-video.js"></script>
+
+     <!--aos-->
+
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+ 
+     <!--additional Js-->
+     <script>
+
+    // This script makes the page interactive:
+    // 1. It handles the mobile and tablet menu, allowing it to slide in and out when the user clicks the menu icons.
+    // 2. It sets up a grid layout to neatly organize images on the page.
+    // 3. It makes sure the background video in the banner plays smoothly without any controls.
+    // 4. It adds cool animations that trigger as you scroll down the page.
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+    // Controls for opening and closing the mobile and tablet menu
+    const menuOpen = document.querySelector('.js-menu-open');
+    const menuClose = document.querySelector('.js-menu-close');
+    const menu = document.querySelector('.js-menu');
+    // Show the menu when the open button is clicked
+    menuOpen.addEventListener('click', () => {
+        menu.classList.remove('translate-x-full');
+    });
+    // Hide the menu when the close button is clicked
+    menuClose.addEventListener('click', () => {
+        menu.classList.add('translate-x-full');
+    });
+
+    // Select the container element for the Masonry grid
+    var grid = document.querySelector('.msnry-grid');
+
+    // Initialize Masonry on the selected grid container
+    var msnry = new Masonry(grid, {
+    // Specify the column width for the grid layout
+    columnWidth: '.msnry-grid-sizer',
+    
+    // Specify the gutter size (spacing) between grid items
+    gutter: '.msnry-gutter-sizer',
+    
+    // Specify the class of the grid items
+    itemSelector: '.msnry-grid-item',
+    
+    // Ensure that items are positioned based on percentage width to handle responsive layouts
+    percentPosition: true
+    });     
+});
+
+    $(function(){
+    // Makes the video in the banner work without controls
+    $(".banner-video").bgVideo({
+        fadeIn: 0,
+        //the video will keep playing
+        showPausePlay: false,
+        pauseAfter:0
+    });
+
+});
+    // Adds scrolling animations to the page in card section
+    AOS.init({
+    offset: 400,
+    duration: 1000,
+  });
+     </script>     
+    
+</body>
+
+</html>

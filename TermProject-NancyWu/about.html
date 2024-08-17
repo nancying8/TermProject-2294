@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--tailwind link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--external css-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- the body has a tailwind css-value on it-->
+<!-- mean mimumun-heigh will be will, hidden x-overflow and position is relative-->
+</head>
+<body class="min-h-full overflow-x-hidden relative">
+    <!--header-->
+    <header class=header-intro>
+        <div class="header-container">
+            <!--the logo is here and give them a width of 200-->
+            <a href="index.html"><img src="img/logo.svg" width="200" alt="logo"></a>
+            <h5 class="font-bold text-[3rem] transform -translate-x-[70%]">Horsez</h5>
+            <nav class="absolute top-0 right-0 w-72 bg-gray-200 h-screen translate-x-full transition-all lg:relative lg:h-auto lg:w-auto lg:translate-x-0 js-menu z-20">
+                <!--here is the icon for close the nav menu when is below of screen size-->
+                <a href="#" class="js-menu-close absolute p-2 top-0 right-0 lg:hidden">
+                    <img src="img/icon-close.svg" alt="close menu"  class="w-6 h-6 ">
+                </a>
+                <ul class="text-black lg:text-black-500  lg:flex">
+                    <br>
+                    <br>
+                     <!--nav bar where the actual page will have a class"indicate" to be highlight-->
+                    <li class="nav-header text-center py-2 px-4 border-b lg:border-0"> <a href="index.html">Home</a> </li>
+                    <li class="nav-header text-center py-2 px-4 border-b lg:border-0"> <a href="gallery.html">Gallery</a> </li>
+                    <li class="indicate text-center py-2 px-4 border-b lg:border-0"> <a href="about.html">About</a> </li>
+                    <li class="nav-header text-center py-2 px-4 border-b lg:border-0"> <a href="location.html">Location</a> </li>
+            </nav>
+            <!--here is the icon for open the nav menu when is below of screen size-->
+            <a href="#" class="js-menu-open lg:hidden">
+                <img src="img/icon-menu.svg" alt="open menu" class="w-6 h-6">
+            </a>
+        </div>
+    </header>
+
+    <main>
+     <!-- banner -->
+     <section class="relative">
+        <img src="img/banner-2.jpg" alt="banner" class="w-full  max-h-[30rem]">
+    </section>
+
+    <section class="flex-grow container px-4 mx-auto bg-black-500">
+        <h2 class="text-center font-bold text-2xl md:text-7xl lg:text-10xl  my-10 text-gray">All about horse</h2>
+        <p class="my-2 font-bold text-xl text-center p-2 text-gray">Horses have long captured the human imagination with their grace, strength, and elegance. Revered throughout history as symbols of freedom and power, they have been our companions in work, sport, and leisure. From their majestic gallops across open fields to their steadfast presence in competitive arenas, horses embody a unique blend of beauty and utility. Their deep bond with humans has shaped countless cultures and traditions, while their diverse breeds and temperaments offer endless fascination. Whether admired for their role in agriculture, celebrated in equestrian sports, or cherished as beloved pets, horses continue to inspire and enrich our lives with their timeless charm and unwavering spirit.</p>
+
+    </section>
+    
+
+    <!--parallax-->
+    <section class="parallax">
+
+        <h2 class=" indicate  text-center font-bold text-2xl md:text-3xl lg:text-5xl  my-10"> They are...</h2>
+
+    <section class="parallax_intro parallax-1" id="join">            
+        <div class="parallax_container">
+            <div class="grid">              
+                <div class="parallax_content">
+                    <h3>Playfull</h3>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section class="parallax_text">
+        <div>
+            <p>Horses are naturally amusing animals, often delighting us with their playful antics and curious behaviors. Their sense of humor is evident in their interactions, whether they're engaging in friendly games with their human companions or displaying their quirky personalities through amusing antics. From their funny facial expressions to their playful pranks, horses bring a sense of joy and laughter to those around them. Their ability to make us smile and laugh is one of their most endearing qualities, proving that their playful nature is as vibrant as their majestic presence.</p>
+        </div>
+    </section>
+    
+    <section class="parallax_intro parallax-2" id="anotherSection">
+        <div class="parallax_container">
+            <div class="grid">              
+                <div class="parallax_content">
+                    <h3>Strong</h3>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section class="parallax_text">
+        <div>
+            <p>Horses are epitomes of physical strength and endurance, capable of impressive feats that showcase their powerful build. Their muscular bodies and robust physiques allow them to perform demanding tasks, from carrying heavy loads to excelling in various equestrian sports. Beyond their physical strength, their resilience and stamina in challenging conditions reflect their remarkable fortitude. This inherent power, combined with their agility and grace, makes horses not only extraordinary athletes but also dependable partners in work and play, embodying both physical and mental strength.
+            </p>
+        </div>
+    </section>
+    <section class="parallax_intro parallax-3" id="anotherSection">
+        <div class="parallax_container">
+            <div class="grid">              
+                <div class="parallax_content">
+                    <h3>Compassionate</h3>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section class="parallax_text">
+        <div>
+            <p>Horses are known for their deep capacity for empathy and care. They forge strong bonds with their handlers and other animals, often displaying remarkable sensitivity and understanding. This caring nature is evident in their gentle behaviors, such as nuzzling or leaning into their human friends. They can sense emotions and offer comfort during difficult times, providing a reassuring presence. Their ability to form meaningful connections and their nurturing behavior make them exceptional companions, demonstrating that their emotional intelligence extends far beyond mere instincts.</p>
+        </div>
+    </section>
+    <section class="parallax_intro parallax-4" id="anotherSection">
+        <div class="parallax_container">
+            <div class="grid">              
+                <div class="parallax_content">
+                    <h3>Affectionate</h3>
+                 </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax_text">
+        <div>
+            <p>Horses exhibit profound affection towards those they trust, forming close and enduring relationships with their human companions. Their loving nature is visible in their actions, such as seeking out attention, nuzzling, and resting their heads on their friends. This deep bond is built on mutual respect and trust, often resulting in a strong emotional connection that lasts a lifetime. Their loving behavior highlights their gentle temperament and ability to offer unwavering loyalty and companionship, making them cherished members of any family or team.</p>
+        </div>
+    </section>
+
+    </section>
+
+    </main>
+
+    <hr>
+
+    <!--footer-->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="flex wrap">
+                <div class="site-footer__logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg">
+                    </a>
+                    <h5 class="font-bold text-[3rem] transform -translate-y-[110%]">Horsez</h5>
+                </div>
+                <nav class="site-footer__access">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+        <!-- Add jQuery -->
+     <!--<script src="js/query.min.js"></script>-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+     <!--script links-->
+
+     <script src="js/parallax/parallax.js"></script>
+ 
+     <!--additional js-->
+     <script>
+     // This script makes the page interactive:
+     // 1. It handles the mobile and tablet menu, allowing it to slide in and out when the user clicks the menu icons.
+     // 4. It adds cool animations that trigger as you scroll down the page.
+ 
+     document.addEventListener('DOMContentLoaded', (event) => {
+     // Controls for opening and closing the mobile and tablet menu
+     const menuOpen = document.querySelector('.js-menu-open');
+     const menuClose = document.querySelector('.js-menu-close');
+     const menu = document.querySelector('.js-menu');
+     // Show the menu when the open button is clicked
+     menuOpen.addEventListener('click', () => {
+         menu.classList.remove('translate-x-full');
+     });
+     // Hide the menu when the close button is clicked
+     menuClose.addEventListener('click', () => {
+         menu.classList.add('translate-x-full');
+     });
+
+    });
+
+    // the function is place where in each section place different images with the corresponde class
+    // parallax effect on sections
+    $(function() {
+        $(".parallax-1").parallax({
+        imageSrc: "img/horse-6.jpg",
+    });
+
+        $(".parallax-2").parallax({
+        imageSrc: "img/horse-7.jpg",
+    });
+        $(".parallax-3").parallax({
+        imageSrc: "img/horse-8.jpg",
+    });
+        $(".parallax-4").parallax({
+        imageSrc: "img/horse-9.jpg",
+    });
+});
+     </script>   
+    
+    
+</body>
+
+</html>

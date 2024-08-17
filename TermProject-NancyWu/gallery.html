@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--tailwind link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--external css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script for videos-->
+    <link rel="stylesheet" href="css/bg-video/jquery.background-video.css">
+
+</head>
+<body>
+
+</head>  
+<body class="min-h-full overflow-x-hidden relative">
+    <!--header-->
+       <!--header-->
+       <header class=header-intro>
+        <div class="header-container">
+            <!--the logo is here and give them a width of 200-->
+            <a href="index.html"><img src="img/logo.svg" width="200" alt="logo" class="logo"></a>
+            <h5 class="font-bold text-[3rem] transform -translate-x-[70%]">Horsez</h5>
+            <nav class="absolute top-0 right-0 w-72 bg-gray-200 h-screen translate-x-full transition-all lg:relative lg:h-auto lg:w-auto lg:translate-x-0 js-menu z-20">
+                <!--here is the icon for close the nav menu when is below of screen size-->
+                <a href="#" class="js-menu-close absolute p-2 top-0 right-0 lg:hidden">
+                    <img src="img/icon-close.svg" alt="close menu"  class="w-6 h-6 ">
+                </a>
+                <ul class="text-black lg:text-black-500  lg:flex">
+                    <br>
+                    <br>
+                    <!--nav bar where the actual page will have a class"indicate" to be highlight-->
+                    <li class="nav-header text-center py-2 px-4 border-b lg:border-0"> <a href="index.html">Home</a> </li>
+                    <li class="indicate text-center py-2 px-4 border-b lg:border-0"> <a href="gallery.html">Gallery</a> </li>
+                    <li class="nav-header text-center py-2 px-4 border-b lg:border-0"> <a href="about.html">About</a> </li>
+                    <li class="nav-header text-center py-2 px-4 border-b lg:border-0"> <a href="location.html">Location</a> </li>
+                </ul>
+            </nav><!--here is the icon for open the nav menu when is below of screen size-->
+            <a href="#" class="js-menu-open lg:hidden">
+                <img src="img/icon-menu.svg" alt="open menu" class="w-6 h-6">
+            </a>
+        </div>
+    </header>
+    <main>
+        <!--banner-->
+    <section class="relative">
+        <img src="img/banner-1.jpg" alt="banner-2" class="w-full  max-h-[30rem]">
+    </section>
+
+        </div>
+    </section>
+
+    <section class="flex-grow container px-4 mx-auto">
+        <h2 class="text-center font-bold text-2xl md:text-7xl lg:text-10xl my-10">Gallery</h2>
+        <p class="my-2 font-bold text-xl text-center p-2">A gallery is a curated space where art, photography, or other forms of creative expression are displayed for public viewing. Whether physical or digital, galleries serve as platforms for artists to showcase their work and engage with an audience. In a traditional art gallery, the layout, lighting, and arrangement of pieces are carefully considered to enhance the viewer's experience, guiding them through a narrative or thematic journey. Online galleries offer a similar experience but in a virtual format, allowing for broader access and interaction. Galleries can range from small, intimate spaces focused on niche art forms to expansive institutions featuring works from renowned artists. They play a vital role in preserving cultural heritage, inspiring creativity, and fostering a deeper appreciation for the arts.</p>
+
+    </section>
+
+     <!-- Image Gallery Section -->
+    <section class="flex-grow container px-4 mx-auto">
+        <div class="msnry-grid">
+            <div class="msnry-grid-sizer"></div>
+            <div class="msnry-gutter-sizer"></div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-1.jpg" alt="horse-1" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-2.jpg" alt="horse-2" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-3.jpg" alt="horse-3" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-4.jpg" alt="horse-4" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-5.jpg" alt="horse-5" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-6.jpg" alt="horse-6" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-7.jpg" alt="horse-6" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-8.jpg" alt="horse-6" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-9.jpg" alt="horse-6" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-10.jpg" alt="horse-6" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-11.jpg" alt="horse-6" class="container-img">
+            </div>
+            <div class="msnry-grid-item">
+                <img src="img/horse-12.jpg" alt="horse-6" class="container-img">
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    </main>
+
+    <!--footer-->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="flex wrap">
+                <div class="site-footer__logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg">
+                    </a>
+                    <h5 class="font-bold text-[3rem] transform -translate-y-[110%]">Horsez</h5>
+                </div>
+                <nav class="site-footer__access">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html" >Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+     <!--script links-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazyload/17.4.0/lazyload.min.js"></script>
+
+ 
+     <!--addtional Js-->
+     <script>
+        // This script makes the page interactive:
+        // 1. It handles the mobile and tablet menu, allowing it to slide in and out when the user clicks the menu icons.
+        // 4. It adds cool animations that trigger as you scroll down the page.
+    
+        document.addEventListener('DOMContentLoaded', (event) => {
+        // Controls for opening and closing the mobile and tablet menu
+        const menuOpen = document.querySelector('.js-menu-open');
+        const menuClose = document.querySelector('.js-menu-close');
+        const menu = document.querySelector('.js-menu');
+        // Show the menu when the open button is clicked
+        menuOpen.addEventListener('click', () => {
+            menu.classList.remove('translate-x-full');
+        });
+        // Hide the menu when the close button is clicked
+        menuClose.addEventListener('click', () => {
+            menu.classList.add('translate-x-full');
+        });
+   
+    
+        // Select the container element for the Masonry grid
+        var grid = document.querySelector('.msnry-grid');
+
+        // Initialize Masonry on the selected grid container
+        var msnry = new Masonry(grid, {
+        // Specify the column width for the grid layout
+        columnWidth: '.msnry-grid-sizer',
+    
+         // Specify the gutter size (spacing) between grid items
+         gutter: '.msnry-gutter-sizer',
+    
+        // Specify the class of the grid items
+        itemSelector: '.msnry-grid-item',
+    
+        // Ensure that items are positioned based on percentage width to handle responsive layouts
+         percentPosition: true
+});
+
+});
+     </script>   
+  
+    
+</body>
+
+
+
+</html>
